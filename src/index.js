@@ -13,8 +13,10 @@ const defaultBoxShadow = [
 
 /** @type {import("tailwindcss/plugin")} */
 const innerBorderPlugin = plugin(
-  ({ addDefaults, matchUtilities, theme, corePlugins }) => {
-    addDefaults("inner-border", {
+  ({ addBase, matchUtilities, theme, ...api }) => {
+    const corePlugins = api.corePlugins;
+
+    addBase("inner-border", {
       "--tw-inner-border-color": theme("borderColor.DEFAULT", "currentColor"),
     });
     matchUtilities(
@@ -45,6 +47,10 @@ const innerBorderPlugin = plugin(
         ),
       },
     );
+
+    if (typeof corePlugins !== "function") {
+      return;
+    }
 
     /* Overrides to mitigate precedence issues */
     if (corePlugins("boxShadow")) {
