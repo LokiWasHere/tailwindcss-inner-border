@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-inner-border",
-  "version": "0.2.0",
+  "version": "0.1.0",
   "description": "A Tailwind CSS plugin that provides utilities for creating inner borders with box-shadow.",
   "keywords": [
     "tailwind",
@@ -10,15 +10,11 @@
     "inset",
     "inside"
   ],
-  "homepage": "https://github.com/kripod/tailwindcss-inner-border#readme",
-  "bugs": "https://github.com/kripod/tailwindcss-inner-border/issues",
-  "repository": "github:kripod/tailwindcss-inner-border",
-  "funding": {
-    "type": "github",
-    "url": "https://github.com/sponsors/kripod"
-  },
+  "homepage": "https://github.com/LokiWasHere/tailwindcss-inner-border#readme",
+  "bugs": "https://github.com/LokiWasHere/tailwindcss-inner-border/issues",
+  "repository": "github:LokiWasHere/tailwindcss-inner-border",
   "license": "MIT",
-  "author": "Kristóf Poduszló <kripod@protonmail.com>",
+  "author": "LokiWasHere",
   "exports": {
     "require": "./src/index.js"
   },
@@ -42,7 +38,7 @@
   "peerDependencies": {
     "tailwindcss": ">=3"
   },
-  "packageManager": "pnpm@7.13.4",
+  "packageManager": "bun@1.2.0",
   "nano-staged": {
     "*": "prettier --write --ignore-unknown"
   }

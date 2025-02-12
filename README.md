@@ -7,7 +7,7 @@ A plugin that provides utilities for creating inner borders with box-shadow.
 Install the plugin from npm:
 
 ```sh
-npm install -D tailwindcss-inner-border
+npm install -D @fahdlaabi12/tailwindcss-inner-border
 ```
 
 Then add the plugin to your `tailwind.config.js` file:
@@ -19,10 +19,16 @@ module.exports = {
     // ...
   },
   plugins: [
-    require("tailwindcss-inner-border"),
+    require("@fahdlaabi12/tailwindcss-inner-border"),
     // ...
   ],
 };
+```
+
+or using tailwind v4
+
+```css
+@plugin "@fahdlaabi12/tailwind-inner-border";
 ```
 
 ## Usage
