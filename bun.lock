@@ -2,7 +2,7 @@
   "lockfileVersion": 1,
   "workspaces": {
     "": {
-      "name": "tailwindcss-inner-border",
+      "name": "@fahdlaabi12/tailwindcss-inner-border",
       "devDependencies": {
         "@types/node": "16.11.65",
         "husky": "8.0.1",

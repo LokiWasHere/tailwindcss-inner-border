@@ -1,9 +1,5 @@
 const plugin = require("tailwindcss/plugin");
 
-const {
-  default: flattenColorPalette,
-} = require("tailwindcss/lib/util/flattenColorPalette");
-
 const defaultBoxShadow = [
   "var(--tw-ring-offset-shadow, 0 0 #0000)",
   "var(--tw-ring-shadow, 0 0 #0000)",
@@ -42,9 +38,7 @@ const innerBorderPlugin = plugin(
       },
       {
         type: ["color", "any"],
-        values: (({ DEFAULT: _, ...colors }) => colors)(
-          flattenColorPalette(theme("borderColor")),
-        ),
+        values: (({ DEFAULT: _, ...colors }) => colors)(theme("borderColor")),
       },
     );
 

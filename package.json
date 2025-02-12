@@ -1,6 +1,6 @@
 {
   "name": "@fahdlaabi12/tailwindcss-inner-border",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A Tailwind CSS plugin that provides utilities for creating inner borders with box-shadow.",
   "keywords": [
     "tailwind",
