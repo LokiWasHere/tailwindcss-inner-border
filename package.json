@@ -1,6 +1,6 @@
 {
-  "name": "tailwindcss-inner-border",
-  "version": "0.1.0",
+  "name": "@fahdlaabi12/tailwindcss-inner-border",
+  "version": "0.1.1",
   "description": "A Tailwind CSS plugin that provides utilities for creating inner borders with box-shadow.",
   "keywords": [
     "tailwind",
@@ -33,12 +33,12 @@
     "husky": "8.0.1",
     "nano-staged": "0.8.0",
     "prettier": "2.7.1",
-    "tailwindcss": "3.1.8"
+    "tailwindcss": ">=4"
   },
   "peerDependencies": {
-    "tailwindcss": ">=3"
+    "tailwindcss": ">=4"
   },
-  "packageManager": "bun@1.2.0",
+  "packageManager": "pnpm@7.13.4",
   "nano-staged": {
     "*": "prettier --write --ignore-unknown"
   }
